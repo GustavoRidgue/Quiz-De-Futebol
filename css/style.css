@@ -1,0 +1,105 @@
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.05em;
+}
+
+/*header {
+	font-size: 1.1em;
+}*/
+
+.titulo {
+	text-align: center;
+}
+
+.dicas-introducao {
+	text-align: center;
+	margin: 20px 0;
+}
+
+li {
+	list-style: none;
+}
+
+form {
+	text-align: center;
+	margin: 0 2em;
+}
+
+form input {
+	display: block;
+	text-align: center;
+	/*font-size: 1.05em;*/
+	width: 11em;
+}
+
+form ul {
+	max-width: 1702px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+form li {
+	display: inline-block;
+	margin: .5em 1.5em;
+}
+
+form li p {
+	margin: .5em 0 0 0;
+}
+
+#quiz img {
+	width: 85px;
+	height: 85px;
+}
+
+.resultado, .nomeTimes, .dicas {
+	display: 	none;	
+	text-align: center;
+}
+/*
+.lista-btn {
+	margin: 0 auto;
+}*/
+
+.lista-btn li{
+  margin: 1em .5em;
+}
+
+.btn-enviar, .btn-atualizar, .btn-dicas, .btn-gabarito {
+	font-size: 1.2em;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 8px;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn-enviar:hover, .btn-atualizar:hover {
+	background-color: #6A5ACD;
+	transition: 500ms;
+}
+
+.btn-atualizar {
+	background-color: #28a745;
+	display: none;
+}
+
+.btn-atualizar:hover {
+	background-color: #6B8E23;
+	transition: 500ms;
+}
+
+.btn-gabarito {
+	display: none;
+}
+
+.btn-gabarito , .btn-dicas{
+	background-color: #6c757d;
+}
+
+.btn-gabarito:hover, .btn-dicas:hover {
+	background-color: #696969;
+	transition: 500ms;
+}
