@@ -3,10 +3,6 @@ html {
 	font-size: 1.05em;
 }
 
-/*header {
-	font-size: 1.1em;
-}*/
-
 .titulo {
 	text-align: center;
 }
@@ -22,19 +18,17 @@ li {
 
 form {
 	text-align: center;
-	margin: 0 2em;
+	/*margin: 0 1em;*/
 }
 
 form input {
 	display: block;
 	text-align: center;
-	/*font-size: 1.05em;*/
 	width: 11em;
 }
 
 form ul {
 	max-width: 1702px;
-	padding: 0;
 	margin: 0 auto;
 }
 
@@ -56,10 +50,6 @@ form li p {
 	display: 	none;	
 	text-align: center;
 }
-/*
-.lista-btn {
-	margin: 0 auto;
-}*/
 
 .lista-btn li{
   margin: 1em .5em;
@@ -102,4 +92,12 @@ form li p {
 .btn-gabarito:hover, .btn-dicas:hover {
 	background-color: #696969;
 	transition: 500ms;
+}
+
+.mostrar {
+	display: block;
+}
+
+.esconder {
+	display: none;
 }

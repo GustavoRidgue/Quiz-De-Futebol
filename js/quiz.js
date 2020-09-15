@@ -35,25 +35,7 @@ var lista16 = ['FERROVIARIA', 'FERROVIÁRIA', 'Ferroviaria', 'Ferroviária', 'fe
 function validarTodas() {
 	var acertou = 0;
 
-	document.getElementById('dica1').style.display = 'none';
-	document.getElementById('dica2').style.display = 'none';
-	document.getElementById('dica3').style.display = 'none';
-	document.getElementById('dica4').style.display = 'none';
-
-	document.getElementById('dica5').style.display = 'none';
-	document.getElementById('dica6').style.display = 'none';
-	document.getElementById('dica7').style.display = 'none';
-	document.getElementById('dica8').style.display = 'none';
-
-	document.getElementById('dica9').style.display = 'none';
-	document.getElementById('dica10').style.display = 'none';
-	document.getElementById('dica11').style.display = 'none';
-	document.getElementById('dica12').style.display = 'none';
-
-	document.getElementById('dica13').style.display = 'none';
-	document.getElementById('dica14').style.display = 'none';
-	document.getElementById('dica15').style.display = 'none';
-	document.getElementById('dica16').style.display = 'none';
+	// document.querySelectorAll('dicas').style.display = 'none';
 
 	for (var posicao = 0; posicao <= lista1.length; posicao++) {
 		if (input1.value == lista1[posicao]) {
@@ -299,94 +281,48 @@ function validarTodas() {
 
 function dicas() {
 	// disable('gabarito');
-
-	document.getElementById('dica1').style.display = 'block';
-	document.getElementById('dica2').style.display = 'block';
-	document.getElementById('dica3').style.display = 'block';
-	document.getElementById('dica4').style.display = 'block';
-
-	document.getElementById('dica5').style.display = 'block';
-	document.getElementById('dica6').style.display = 'block';
-	document.getElementById('dica7').style.display = 'block';
-	document.getElementById('dica8').style.display = 'block';
-
-	document.getElementById('dica9').style.display = 'block';
-	document.getElementById('dica10').style.display = 'block';
-	document.getElementById('dica11').style.display = 'block';
-	document.getElementById('dica12').style.display = 'block';
-
-	document.getElementById('dica13').style.display = 'block';
-	document.getElementById('dica14').style.display = 'block';
-	document.getElementById('dica15').style.display = 'block';
-	document.getElementById('dica16').style.display = 'block';
+	var times = document.querySelectorAll('.time');
+	
+	for (var i = 0; i < times.length; i++) {
+		var time = times[i];
+		var mostrarDicas = time.querySelector(".dicas");
+		mostrarDicas.classList.remove('esconder');
+		mostrarDicas.classList.add('mostrar');
+	}
 }
 
 function gabarito() {
 	// disable('dicas');
-
-	document.getElementById('nomeTime1').style.display = 'block';
-	document.getElementById('nomeTime2').style.display = 'block';
-	document.getElementById('nomeTime3').style.display = 'block';
-	document.getElementById('nomeTime4').style.display = 'block';
-
-	document.getElementById('nomeTime5').style.display = 'block';
-	document.getElementById('nomeTime6').style.display = 'block';
-	document.getElementById('nomeTime7').style.display = 'block';
-	document.getElementById('nomeTime8').style.display = 'block';
-
-	document.getElementById('nomeTime9').style.display = 'block';
-	document.getElementById('nomeTime10').style.display = 'block';
-	document.getElementById('nomeTime11').style.display = 'block';
-	document.getElementById('nomeTime12').style.display = 'block';
-
-	document.getElementById('nomeTime13').style.display = 'block';
-	document.getElementById('nomeTime14').style.display = 'block';
-	document.getElementById('nomeTime15').style.display = 'block';
-	document.getElementById('nomeTime16').style.display = 'block';
+	var times = document.querySelectorAll('.time');
+		
+	for (var i = 0; i < times.length; i++) {
+		var time = times[i];
+		var mostrarGabarito = time.querySelector(".nomeTimes");
+		mostrarGabarito.classList.remove('esconder');
+		mostrarGabarito.classList.add('mostrar');
+	}
 }
 
 function disable(func) {
 	if (func == 'dicas') {
-		document.getElementById('dica1').style.display = 'none';
-		document.getElementById('dica2').style.display = 'none';
-		document.getElementById('dica3').style.display = 'none';
-		document.getElementById('dica4').style.display = 'none';
-
-		document.getElementById('dica5').style.display = 'none';
-		document.getElementById('dica6').style.display = 'none';
-		document.getElementById('dica7').style.display = 'none';
-		document.getElementById('dica8').style.display = 'none';
-
-		document.getElementById('dica9').style.display = 'none';
-		document.getElementById('dica10').style.display = 'none';
-		document.getElementById('dica11').style.display = 'none';
-		document.getElementById('dica12').style.display = 'none';
-
-		document.getElementById('dica13').style.display = 'none';
-		document.getElementById('dica14').style.display = 'none';
-		document.getElementById('dica15').style.display = 'none';
-		document.getElementById('dica16').style.display = 'none';
+		var times = document.querySelectorAll('.time');
+	
+		for (var i = 0; i < times.length; i++) {
+			var time = times[i];
+			var mostrarDicas = time.querySelector(".dicas");
+			mostrarDicas.classList.add('esconder');
+			mostrarDicas.classList.remove('mostrar');
+		}
 	}
 	else if (func == 'gabarito') {
-		document.getElementById('nomeTime1').style.display = 'none';
-		document.getElementById('nomeTime2').style.display = 'none';
-		document.getElementById('nomeTime3').style.display = 'none';
-		document.getElementById('nomeTime4').style.display = 'none';
-
-		document.getElementById('nomeTime5').style.display = 'none';
-		document.getElementById('nomeTime6').style.display = 'none';
-		document.getElementById('nomeTime7').style.display = 'none';
-		document.getElementById('nomeTime8').style.display = 'none';
-
-		document.getElementById('nomeTime9').style.display = 'none';
-		document.getElementById('nomeTime10').style.display = 'none';
-		document.getElementById('nomeTime11').style.display = 'none';
-		document.getElementById('nomeTime12').style.display = 'none';
-
-		document.getElementById('nomeTime13').style.display = 'none';
-		document.getElementById('nomeTime14').style.display = 'none';
-		document.getElementById('nomeTime15').style.display = 'none';
-		document.getElementById('nomeTime16').style.display = 'none';
+		var times = document.querySelectorAll('.time');
+		
+		for (var i = 0; i < times.length; i++) {
+			var time = times[i];
+			var mostrarGabarito = time.querySelector(".nomeTimes");
+			mostrarGabarito.classList.add('esconder');
+			mostrarGabarito.classList.remove('mostrar');
+		}
 	}
 }
 
